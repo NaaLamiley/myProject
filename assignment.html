@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment</title>
+
+
+</head>
+
+<body>
+
+
+    <p>Please input 2 numbers</p>
+
+    <input id="numb1">
+    <input id="numb2">
+
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <p id="example"></p>
+
+    <script>
+        function myFunction() {
+            var x;
+            var y;
+            var text;
+
+            // Get the value of the input field with id="numb"
+            x = document.getElementById("numb1").value;
+            y = document.getElementById("numb2").value;
+
+            // If x is Not a Number or less than one or greater than 10
+            if (x < y) {
+                text = "the bigger one is" + y;
+            } else if (x > y) {
+                text = "the bigger one is" + x;
+            }
+            document.getElementById("example").innerHTML = text;
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
